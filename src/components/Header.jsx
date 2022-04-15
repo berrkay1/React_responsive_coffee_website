@@ -22,8 +22,8 @@ function Header() {
 
         <div className="icons">
           <div className="fas fa-search"></div>
-          <div className="fas fa-shopping-cart"></div>
-          <div className="fas fa-bars"></div>
+          <Link to='sepet'> <div className="fas fa-shopping-cart"></div> </Link>
+          <div className="fas fa-bars"></div> 
         </div>
 
 

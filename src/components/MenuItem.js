@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../components/MenuItemStyle.css';
+import ContextCoffeeApi from './ContexCoffee';
 
+function MenuItem({menu}) {
 
-function MenuItem({ menu,AddtoBasket }) {
-    
+    const { AddtoBasket } = useContext(ContextCoffeeApi);
+
     return (
         <div className='menuİtem'>
             <h1 className='title'>{menu.name}</h1>
