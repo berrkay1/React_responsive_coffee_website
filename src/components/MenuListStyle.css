@@ -1,0 +1,21 @@
+.menuList{
+    padding: 20px;
+    
+}
+.menuList ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    list-style-type:none;
+
+}
+
+.menuList ul li {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

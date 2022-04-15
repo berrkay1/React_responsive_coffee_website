@@ -17,9 +17,10 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
+    
 }
 
-html{
+/* html{
     font-size:80% ;
     overflow-x: hidden;
     scroll-padding-top: 9rem;
@@ -35,10 +36,12 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background: #fff;
     border-radius: 5rem;
-}
+} */
 
 body{
-    background:var(--bg);
+    background:var(--main-color);
+    text-decoration: none;
+    list-style: none;
 }
 .header{
     background-color: var(--bg);
@@ -47,11 +50,11 @@ body{
     justify-content: space-between;
     padding: 1.5rem 7%;
     border-bottom: var(--border);
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1000; */
 
 }
 
@@ -76,5 +79,12 @@ body{
     font-size: 2.5rem;
     margin-left: 2rem;
 
+}
+
+.form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
 }
 
