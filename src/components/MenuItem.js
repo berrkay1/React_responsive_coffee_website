@@ -17,7 +17,7 @@ function MenuItem({menu}) {
                     <div className="price">${menu.price}</div>
                 </div>
             </div>
-            <button  onClick={()=>AddtoBasket(menu)} type='submit'>Add Basket</button>
+            <button className='addbasket'  onClick={()=>AddtoBasket(menu)} type='submit'>Add Basket</button>
         </div>
     )
 }

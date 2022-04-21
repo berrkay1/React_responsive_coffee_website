@@ -12,8 +12,21 @@ import { useState } from "react";
             sepet:[]
           });
           
+          const artir = (coffeId) => setState({
+            ...state,
+            sepet: state.sepet.map(item => item.id ===coffeId ? {...item,count:item.count +1}:item )
+          })
         
-        
+        const azalt = (coffeId) => setState({
+          ...state,
+          sepet:state.sepet.map(item => item.id === coffeId ?  {...item,count:item.count > 1 ? item.count -1:item.count} :item  )
+        })
+
+        const deleteItem = (coffeId) => setState({
+          ...state,
+          sepet:state.sepet.filter(item=>item.id !==coffeId)
+          
+        })
           
           const AddtoBasket = (coffe) => setState({
             ...state,
@@ -30,6 +43,9 @@ import { useState } from "react";
                 sepet,
                 menuData,
                 AddtoBasket,
+                artir,
+                azalt,
+                deleteItem
             }}>
                 {children}
             </ContextCoffeeApi.Provider>

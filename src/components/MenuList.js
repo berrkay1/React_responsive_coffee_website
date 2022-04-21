@@ -9,9 +9,6 @@ function MenuList() {
   const { menuData } = useContext(ContextCoffeeApi);
 
 
-  
-  
-
   return (
     
     <div className="menuList">

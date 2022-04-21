@@ -15,7 +15,7 @@
 .info img{
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 5px;
     
 }
 
@@ -34,13 +34,13 @@
 .info img{
     margin-right: 15px;
 }
-button{
+.addbasket{
     width: 40%;
     padding: 10px;
     margin-top: 15px;
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
-    background-color: #010103;
-    color: #d3ad7f;
+    background-color: #d3ad7f;
+    color: #010103;
 }
