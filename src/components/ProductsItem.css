@@ -1,0 +1,41 @@
+.productİtem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #d3ad7f;
+    border-radius: 5px;
+    max-width: 350px;
+   padding: 15px;
+   margin: 10px;
+   
+}
+
+.productİtem  img{
+    width: 300px;
+    height: 200px;
+    object-position: center;
+    object-fit: cover;
+}
+.price{
+    font-size: 18px;
+    margin-top: 7px;
+    
+}
+
+.title{
+    margin-top: 7px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.desc-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.desc-price p {
+    text-align: center;
+    margin-bottom: 10px;
+}

@@ -1,6 +1,8 @@
 import { createContext } from "react";
 import { data } from "../MenuData";
 import { useState } from "react";
+import {ProductsData} from '../ProductsData';
+
 
  const ContextCoffeeApi = createContext();
 
@@ -9,8 +11,13 @@ import { useState } from "react";
 
         const [state,setState] = useState({
             menuData:data,
+            ProductData:ProductsData,
             sepet:[]
           });
+
+        const [input,setInput] = useState('');
+
+        
           
           const artir = (coffeId) => setState({
             ...state,
@@ -33,9 +40,18 @@ import { useState } from "react";
             sepet: state.sepet.find(coffeItem => coffeItem.id === coffe.id) ? state.sepet.map(coffeItem => coffeItem.id === coffe.id ? {...coffeItem ,count:coffeItem.count +1 } : coffeItem  )
             : [...state.sepet, {...coffe, count:1}] 
           });
+
+          const FromProductaddToBasket = (product) => setState({
+            ...state,
+            sepet:state.sepet.find(item => item.id ===product.id ) ? state.sepet.map(item => item.id === product.id ? {...item,count:item.count +1} : item) : [...state.sepet, {...product,count:1}]
+          });
+
+
+          
         
           const sepet = state.sepet;
           const menuData = state.menuData;
+          const ProductData = state.ProductData;
 
         return(
             <ContextCoffeeApi.Provider
@@ -43,9 +59,11 @@ import { useState } from "react";
                 sepet,
                 menuData,
                 AddtoBasket,
+                FromProductaddToBasket,
+                ProductData,
                 artir,
                 azalt,
-                deleteItem
+                deleteItem,input,setInput
             }}>
                 {children}
             </ContextCoffeeApi.Provider>

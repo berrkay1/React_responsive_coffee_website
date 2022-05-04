@@ -9,7 +9,7 @@ function Sepet() {
     const totalPrice = sepet.reduce((top,item)=> (top = top + item.count*item.price),0)
 
     
-    
+    console.log(sepet);
 
     return (
         <div className='sepet'>
@@ -28,7 +28,7 @@ function Sepet() {
 
                     </div>
                     <div className="buttons">
-                        <button type='button' onClick={()=>artir(item.id)} >+</button>
+                        <button type='button'  onClick={()=>artir(item.id)} >+</button>
                         <div className='count'>{item.count}</div>
                         <button type='button' onClick={()=>azalt(item.id)} >-</button>
                     </div>

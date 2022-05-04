@@ -6,14 +6,15 @@ import { useContext } from 'react';
 
 function MenuList() {
 
-  const { menuData } = useContext(ContextCoffeeApi);
-
+  const { menuData,input } = useContext(ContextCoffeeApi);
+  
 
   return (
     
     <div className="menuList">
-      <ul>
-        {menuData.map((item) => (
+      <ul className='list'>
+        {menuData.filter(val=> val.name.toLowerCase().includes(input))
+        .map((item) => (
           <li><MenuItem menu={item}  key={item.id} /></li>
         )) }
       </ul>

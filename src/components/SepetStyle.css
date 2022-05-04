@@ -1,7 +1,7 @@
 .sepet{
-    padding: 20px;
+    padding: 10px;
     display: flex;
-    
+    color: beige;
 }
 
 .sepet h1{
@@ -13,7 +13,8 @@
     margin-bottom: 25px;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    flex-wrap: wrap;
+    max-width: 850px;
    
 }
 .sepet-info p{
@@ -61,7 +62,8 @@ p{
     cursor: pointer;
     border-radius: 5px;
     background-color: #010103;
-    color: #d3ad7f;
+    color: beige;
+    border: 1px solid beige;
 
 }
 
@@ -75,7 +77,7 @@ p{
     padding: 3px;
 }
 i{
-    font-size: 35px;
+    font-size: 27px;
     font-weight: bold;
     cursor: pointer;
     margin-left: 50px;
@@ -107,8 +109,8 @@ i{
 button{
     
     border-radius: 5px;
-    background-color: #010103;
-    color: #d3ad7f;
+    background-color: #d3ad7f;
+    color:#010103 ;
     padding: 10px;
     cursor: pointer;
 }

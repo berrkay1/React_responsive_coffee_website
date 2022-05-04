@@ -75,13 +75,7 @@ body{
 
 }
 
-.form input{
-    height: 100%;
-    width: 100%;
-    font-size: 1.6rem;
-    color: var(--black);
-    margin-top: 30px;
-}
+
 .shopping-cart{
     position: relative;
 }

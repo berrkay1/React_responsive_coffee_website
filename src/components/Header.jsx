@@ -32,7 +32,7 @@ function Header() {
       </nav>
 
       <div className="icons">
-        <div className="fas fa-search"></div>
+        
         <Link  to='sepet'>
           <div className="fas fa-shopping-cart"></div>
         </Link>

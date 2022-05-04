@@ -1,23 +1,22 @@
 .menuİtem{
-    
-    padding: 20px; 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 1px solid #d3ad7f;
+    border-radius: 5px;
+    max-width: 350px;
+   padding: 15px;
+   margin: 10px;
 }
 .menuİtem .info{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
    
 }
-.info img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    
-}
+
 
 .menuİtem .info .desc-price{
     display: flex;
@@ -31,8 +30,12 @@
     font-size: 20px;
 }
 
-.info img{
+.menuİtem img{
     margin-right: 15px;
+    width: 300px;
+    height: 200px;
+    object-position: center;
+    object-fit: cover;
 }
 .addbasket{
     width: 40%;
