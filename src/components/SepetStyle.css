@@ -1,13 +1,19 @@
 .sepet{
-    padding: 10px;
+    padding: 15px;
     display: flex;
+    flex-wrap: wrap;
     color: beige;
 }
 
 .sepet h1{
     margin-bottom: 35px;
 }
-
+.sepet-container{
+    display: flex;
+    flex: 1 1 300px;
+    align-items: center;
+    flex-direction: column;
+}
 .sepet .sepet-cart{
     display: flex;
     margin-bottom: 25px;
@@ -34,6 +40,7 @@ display: flex;
 justify-content: space-between;
 flex-direction: column;
 flex: 1;
+flex-wrap: wrap;
 margin-right: 20px;
 }
 .price{
@@ -83,18 +90,15 @@ i{
     margin-left: 50px;
 }
 .total-cart{
-    border: 1px solid #010103;
+    border: 1px solid #d3ad7f;
     padding: 15px;
     border-radius: 8px;
-    margin-right: 20px;
-    width:500px;
+    flex:1 1 200px;
     height: 200px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    position: absolute;
-    right: 0px;
-    top: 180px;
+    margin: 15px;
     
 }
 .total-cart span{
@@ -117,4 +121,20 @@ button{
 .total-cart .total{
     display: flex;
     flex-direction: column;
+}
+
+
+@media (max-width:991px) {
+   
+}
+
+@media (max-width:768px) {
+   
+    
+
+}
+
+@media (max-width:441px) {
+   
+
 }

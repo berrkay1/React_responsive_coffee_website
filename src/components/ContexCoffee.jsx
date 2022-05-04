@@ -53,6 +53,8 @@ import {ProductsData} from '../ProductsData';
           const menuData = state.menuData;
           const ProductData = state.ProductData;
 
+          const [openResBar,setOpenResBar] = useState(false);
+
         return(
             <ContextCoffeeApi.Provider
              value={{
@@ -63,7 +65,7 @@ import {ProductsData} from '../ProductsData';
                 ProductData,
                 artir,
                 azalt,
-                deleteItem,input,setInput
+                deleteItem,input,setInput,openResBar,setOpenResBar
             }}>
                 {children}
             </ContextCoffeeApi.Provider>

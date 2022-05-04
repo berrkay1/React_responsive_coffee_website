@@ -47,7 +47,6 @@ function Sepet() {
                     <button>Go to Cart</button>
                 </div>
              
-
             </div>
 
             
