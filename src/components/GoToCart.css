@@ -1,0 +1,37 @@
+.gotocart{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+.gotocart h1{
+    margin-bottom: 50px;
+}
+.form-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #d3ad7f;
+    padding: 50px;
+    border-radius: 5px;
+    width: 60%;
+    margin: 0 auto;
+
+}
+.form-card input{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.form-card button{
+    margin-top: 20px;
+    width: 50%;
+    
+}

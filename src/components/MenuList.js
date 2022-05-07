@@ -13,7 +13,7 @@ function MenuList() {
     
     <div className="menuList">
       <ul className='list'>
-        {menuData.filter(val=> val.name.toLowerCase().includes(input))
+        {menuData.filter(val=> val.name.toLowerCase().includes(input.toLowerCase()))
         .map((item) => (
           <li><MenuItem menu={item}  key={item.id} /></li>
         )) }

@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 25vh;
+    background-color: rgba(191, 170, 170, 0.195);
+    margin-top: 20px;
+   
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+}
+.footer-icons div{
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.footer-icons div:hover{
+    color: #d3ad7f;
+}

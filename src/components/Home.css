@@ -8,6 +8,7 @@
     
 }
 
+
 .home .content{
    max-width: 60rem; 
    margin-left: 30px;
@@ -36,3 +37,25 @@
      font-size: 1rem;
      border-radius: 5px;
  }
+.fa-shopping-cart{
+   position: relative;
+}
+ .basket-count{
+    position: absolute;
+    right: -15px;
+    top: -10px;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+

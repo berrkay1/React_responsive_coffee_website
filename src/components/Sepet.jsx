@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import ContextCoffeeApi from './ContexCoffee'
 import '../components/SepetStyle.css';
+import {Link} from 'react-router-dom';
 
 function Sepet() {
 
@@ -44,7 +45,7 @@ function Sepet() {
                 <h2>Basket summary</h2>
                 <div className='total'>
                     <span>Toplam price : $ {totalPrice}</span>
-                    <button>Go to Cart</button>
+                   < Link  to='/goCart'><button style={{width:'100%'}}>Go to Cart</button></Link> 
                 </div>
              
             </div>

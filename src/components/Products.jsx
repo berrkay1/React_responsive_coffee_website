@@ -15,7 +15,7 @@ function Products() {
   return (
     <div className='products' style={{ color: 'beige' }}>
       <div className="products-header">
-        <h2  >Coffee Products</h2>
+        <h2  >Our Coffees</h2>
         <div onClick={() => setModal(true)} className='search-icon'><i className="fas fa-search"></i></div>
       </div>
 
@@ -28,7 +28,7 @@ function Products() {
       }
 
       <ul className="products-list" >
-        {ProductData.filter(val => val.name.toLowerCase().includes(input))
+        {ProductData.filter(val => val.name.toLowerCase().includes(input.toLowerCase()))
           .map(item => (
             <li key={item.id}><ProductsItem item={item} /></li>
           ))}

@@ -9,6 +9,8 @@ import Contact from './components/Contact';
 import ResponsiveNavbar from './components/ResponsiveNavbar';
 import {useContext} from 'react';
 import ContextCoffeeApi from './components/ContexCoffee';
+import GoToCart from './components/GoToCart';
+
 
 function App() {
 
@@ -19,14 +21,17 @@ function App() {
       <Router>
       <Header/>
       {openResBar && <ResponsiveNavbar/>}
+        
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='menu' element={<Menu/>}/>
           <Route path='products' element={<Products/>}/>
-          <Route path='contact' element={<Contact/>}/>
+          <Route path='contact' element={<Contact/> }/>
           <Route path='basket' element={<Sepet/>}/>
+          <Route path='/goCart' element={<GoToCart/>}/>
         </Routes>
-
+       
+      
       </Router>
 
     </div>

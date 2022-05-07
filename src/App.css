@@ -18,6 +18,15 @@
     text-transform: capitalize;
     transition: .2s linear;
     
+    
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* html{
@@ -83,25 +92,12 @@ body{
     position: relative;
 }
 
-.basket-count{
-    position: absolute;
-    top: 40px;
-    right: 160px;
-    color: #fff;
-    height: 25px;
-    width: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 17px;
-    border-radius: 50%;
-    background-color: red;
+.res-navbar{
+    padding: 15px;
 }
 
 .responsive-navbar{
     display: flex;
-    padding: 15px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -172,6 +168,8 @@ body{
     .icons{
         display: flex;
     }
+
+    
     
 
 }
